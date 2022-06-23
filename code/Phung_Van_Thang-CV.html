@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Phùng Văn Thắng CV</title>
 </head>
-<body>
+<body onresize="change_triangle_style()" onload="change_triangle_style()">
     <div class="cv-container">
         <div class="left-col">
             <div class="avt-wrapper">
@@ -123,7 +123,7 @@
             </div>
             <div class="section-wrapper">
                 <div class="rectangle-wrapper">
-                    <h2>Academic Level</h2>
+                    <h3>Academic Level</h3>
                 </div>
                 <div class="triangle-wrapper">
                 </div>
@@ -139,7 +139,7 @@
             </div>
             <div class="section-wrapper">
                 <div class="rectangle-wrapper">
-                    <h2>Project</h2>
+                    <h3>Project</h3>
                 </div>
                 <div class="triangle-wrapper">
                 </div>
@@ -157,5 +157,16 @@
             </div>
         </div>
     </div>
+    <script>
+        function change_triangle_style(){
+            var rectangle_wrapper=document.getElementsByClassName("rectangle-wrapper");
+            var triangle_wrapper=document.getElementsByClassName("triangle-wrapper");
+            for(let i=0;i<triangle_wrapper.length;i++){
+                triangle_wrapper[i].style.height=rectangle_wrapper[i].offsetHeight;
+                triangle_wrapper[i].style.border=rectangle_wrapper[i].offsetHeight/2+"px solid #fff";
+                triangle_wrapper[i].style.borderLeft=rectangle_wrapper[i].offsetHeight*0.7+"px solid #213251";
+            }
+        }
+     </script>
 </body>
 </html>

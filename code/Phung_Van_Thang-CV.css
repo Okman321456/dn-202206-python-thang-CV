@@ -1,24 +1,27 @@
 .cv-container{
-    display: flex;
+    display: grid;
+    grid-template-columns:40% 60%;
     background-color: white;
-    width: 750px;
+    max-width: 710px;
     margin: 0 auto;
+    height: auto;
 }
 body{
     background-color: gray;
 }
 .left-col {
     background-color: #182750;
-    height: 1200px;
-    width: 300px;
+    height: auto;
     margin-left: auto;
+    margin-bottom: 50px;
 }
 .left-col p{
     color: white;
 }
 .avt-img{
-    height: 150px;
-    width: 150px;
+    margin-top: 10px;
+    height: auto;
+    width: 55%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -44,7 +47,7 @@ body{
     text-transform: uppercase;
 }
 .item-wrapper{
-    height: 30px;
+    height: auto;
     display: flex;
     align-items: center;
     margin: 0px 5px;
@@ -60,12 +63,19 @@ body{
 }
 .item-info-wrapper p{
     font-size: 15px;
+    margin: 2px;
+    width: auto;
+    height: auto;
 }
 .item-img-wrapper i{
     color: white;
     overflow:hidden;
     width: 100%;
     height: 100%;
+}
+
+.item-info{
+    width: auto;
 }
 
 /* for career goals*/
@@ -75,6 +85,11 @@ body{
     color: white;
     text-transform: uppercase;
 }
+.career-goals-wrapper{
+    height: auto;
+    width: auto;
+}
+
 .career-goals-wrapper p{
     font-family: serif;
     font-size: 15px;
@@ -90,6 +105,12 @@ body{
     color: white;
     text-transform: uppercase;
 }
+
+.skills-wrapper {
+    width: auto;
+    height: auto;
+}
+
 .skills-wrapper p{
     margin-left: 10px;
     margin-bottom: 5px;
@@ -135,6 +156,11 @@ body{
     color: white;
     text-transform: uppercase;
 }
+.prizes-wrapper {
+    width: auto;
+    height: auto;
+}
+
 .prizes-wrapper p{
     font-family: serif;
     font-size: 15px;
@@ -158,6 +184,11 @@ body{
     margin: 0px 10px;
 }
 
+.interesting-wrapper{
+    width: auto;
+    height: auto;
+    margin-bottom: 15px;
+}
 
 
 
@@ -165,52 +196,58 @@ body{
 /* for right column */
 .right-col{
     background-color: white;
-    height: 1300px;
-    width: 450px;
+    height: auto;
     margin-right: auto;
+    width: auto;
 }
 
 .name-position-wrapper{
     margin-top: 40px;
     text-align: center;
     margin-bottom: 50px;
+    color: #1A2B46;
 }
 
 .name-position-wrapper h1{
     font-size: 35px;
     margin-bottom: 10px;
+    width: auto;
 }
 
 /* for section */
 .section-wrapper{
     margin-left: 30px;
-    margin-right: 120px;
+    margin-right: 50px;
     margin-top: 30px;
     display: flex;
-    height: 40px;
-    width: 320px;
+    height: auto;
+    width: 75%;
     align-items: center;
 }
 .rectangle-wrapper{
     background-image: linear-gradient(to right, white, #213251);
-    height: 40px;
+    height: auto;
     width: 85%;
 }
-.rectangle-wrapper h2{
-    color: darkmagenta;
-    margin: auto 0px;
+.rectangle-wrapper h3{
+    color: #6F3858;
+    margin: 5px 0px;
     vertical-align: middle;
-    max-height: 40px;
+    height: auto;
+    text-transform: uppercase;
 }
 .triangle-wrapper{
-    border: 20px solid #fff;
-    border-left: 50px solid #213251;
+    width: 15%;
+    /* height: 32px;
+    border: 16px solid #fff;
+    border-left: 70 solid #213251; */
 }
 
 /* for section */
 .section-items-wrapper{
     margin-left: 30px;
     text-align: left;
+    margin-right: 10px;
 }
 
 .section-item .item-name{
@@ -221,4 +258,13 @@ body{
 .section-item-major .item-major-name{
     font-weight: normal;
     margin: 5px auto;
+}
+
+@media only screen and (max-width:710px) {
+    .cv-container{
+        grid-template-columns:100%;
+    }
+    .right-col{
+        width: 100%;
+    }
 }
