@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Phùng Văn Thắng CV</title>
 </head>
+
 <body onresize="change_triangle_style()" onload="change_triangle_style()">
     <div class="cv-container">
         <div class="left-col">
             <div class="avt-wrapper">
                 <div class="avt-img">
-                    <img src="https://1.bp.blogspot.com/-_ICpStYV4jc/Xn7YHOr192I/AAAAAAAAaU8/3MMlXex_zs4iLkGQ9VQFgkT54UIW6lpugCLcBGAsYHQ/s1600/Anh-Dai-Dien-Giau-Mat%2B%252843%2529.jpg"/>
+                    <img src="../image/288647953_430615828918335_2875228124844850437_n.jpg" />
                 </div>
             </div>
             <div class="invi-info-wrapper">
@@ -69,8 +71,7 @@
             </div>
             <div class="career-goals-wrapper">
                 <h3>Career Goals</h3>
-                <p>I hope to be worked in a professtional working enviroment, where I can improve my major skills, 
-                    learn more about new programing knowledge to sucessfully complete the assigned works.
+                <p>I hope to be worked in a professtional working enviroment, where I can improve my major skills, learn more about new programing knowledge to sucessfully complete the assigned works.
                 </p>
             </div>
             <div class="skills-wrapper">
@@ -110,10 +111,7 @@
             </div>
             <div class="interesting-wrapper">
                 <h3>Hobbies</h3>
-                <p>- Coding<br/>
-                - Listening to music<br/>
-                - Singing<br/>
-                - Playing badminton</p>
+                <p>- Coding<br/> - Listening to music<br/> - Singing<br/> - Playing badminton</p>
             </div>
         </div>
         <div class="right-col">
@@ -149,8 +147,7 @@
                     <h4 class="item-name">Topic: Fedarated Learning for Malware detection in Linux OS</h4>
                     <div class="section-item-major">
                         <h4 class="item-major-name">Research team in DUT</h4>
-                        <p>- Collecting samples and take features from them using pyelf-tools<br/>
-                        - Support colleague in building and traning model
+                        <p>- Collecting samples and take features from them using pyelf-tools<br/> - Support colleague in building and traning model
                         </p>
                     </div>
                 </div>
@@ -158,15 +155,16 @@
         </div>
     </div>
     <script>
-        function change_triangle_style(){
-            var rectangle_wrapper=document.getElementsByClassName("rectangle-wrapper");
-            var triangle_wrapper=document.getElementsByClassName("triangle-wrapper");
-            for(let i=0;i<triangle_wrapper.length;i++){
-                triangle_wrapper[i].style.height=rectangle_wrapper[i].offsetHeight;
-                triangle_wrapper[i].style.border=rectangle_wrapper[i].offsetHeight/2+"px solid #fff";
-                triangle_wrapper[i].style.borderLeft=rectangle_wrapper[i].offsetHeight+"px solid #213251";
+        function change_triangle_style() {
+            var rectangle_wrapper = document.getElementsByClassName("rectangle-wrapper");
+            var triangle_wrapper = document.getElementsByClassName("triangle-wrapper");
+            for (let i = 0; i < triangle_wrapper.length; i++) {
+                triangle_wrapper[i].style.height = rectangle_wrapper[i].offsetHeight;
+                triangle_wrapper[i].style.border = rectangle_wrapper[i].offsetHeight / 2 + "px solid #fff";
+                triangle_wrapper[i].style.borderLeft = rectangle_wrapper[i].offsetHeight + "px solid #213251";
             }
         }
-     </script>
+    </script>
 </body>
+
 </html>
