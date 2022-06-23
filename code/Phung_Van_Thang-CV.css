@@ -17,6 +17,7 @@ body{
 }
 .left-col p{
     color: white;
+    font-weight: 300;
 }
 .avt-img{
     margin-top: 10px;
@@ -48,15 +49,17 @@ body{
 }
 .item-wrapper{
     height: auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: 10% 90%;
     align-items: center;
-    margin: 0px 5px;
+    margin: 5px 5px;
     font-family: serif;
 }
 .item-img-wrapper{
+    text-align: center;
     margin: 0px 5px;
-    height: 17px;
-    width: 22px;
+    height: auto;
+    width: auto;
 }
 .item-info-wrapper{
     width: 100%;
@@ -221,7 +224,7 @@ body{
     margin-top: 30px;
     display: flex;
     height: auto;
-    width: 75%;
+    width: 85%;
     align-items: center;
 }
 .rectangle-wrapper{
