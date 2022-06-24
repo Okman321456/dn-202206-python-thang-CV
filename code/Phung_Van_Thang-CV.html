@@ -15,7 +15,7 @@
         <div class="left-col">
             <div class="avt-wrapper">
                 <div class="avt-img">
-                    <img src="../image/288647953_430615828918335_2875228124844850437_n.jpg" />
+                    <img src="../image/289097060_435537518130041_678859902721263895_n.jpg" alt="">
                 </div>
             </div>
             <div class="invi-info-wrapper">
@@ -117,11 +117,11 @@
         <div class="right-col">
             <div class="name-position-wrapper">
                 <h1>Phùng Văn Thắng</h1>
-                <h3>Python Developer</h3>
+                <h2>Python Developer</h2>
             </div>
             <div class="section-wrapper">
                 <div class="rectangle-wrapper">
-                    <h3>Academic Level</h3>
+                    <h2>Academic Level</h2>
                 </div>
                 <div class="triangle-wrapper">
                 </div>
@@ -137,7 +137,7 @@
             </div>
             <div class="section-wrapper">
                 <div class="rectangle-wrapper">
-                    <h3>Project</h3>
+                    <h2>Project</h2>
                 </div>
                 <div class="triangle-wrapper">
                 </div>
@@ -147,7 +147,19 @@
                     <h4 class="item-name">Topic: Fedarated Learning for Malware detection in Linux OS</h4>
                     <div class="section-item-major">
                         <h4 class="item-major-name">Research team in DUT</h4>
-                        <p>- Collecting samples and take features from them using pyelf-tools<br/> - Support colleague in building and traning model
+                        <p>Classify a file in Linux OS to see whether it is a Malware or not using Fedarated Learning</p>
+                        <p>*Missions: <br/>- Collecting samples and take features from them using pyelf-tools<br/> - Support colleague in building and traning model
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-items-wrapper">
+                <div class="section-item">
+                    <h4 class="item-name">Topic: Cutting and Transferring a big file</h4>
+                    <div class="section-item-major">
+                        <h4 class="item-major-name">Network Specialized Projects</h4>
+                        <p>Cutting a big file into several smaller file, then transferring them in order and put them together
+                            in the other side within a Lan Network.
                         </p>
                     </div>
                 </div>
@@ -159,8 +171,8 @@
             var rectangle_wrapper = document.getElementsByClassName("rectangle-wrapper");
             var triangle_wrapper = document.getElementsByClassName("triangle-wrapper");
             for (let i = 0; i < triangle_wrapper.length; i++) {
-                triangle_wrapper[i].style.height = rectangle_wrapper[i].offsetHeight;
-                triangle_wrapper[i].style.border = rectangle_wrapper[i].offsetHeight / 2 + "px solid #fff";
+                // triangle_wrapper[i].style.height = rectangle_wrapper[i].offsetHeight;
+                triangle_wrapper[i].style.border = rectangle_wrapper[i].offsetHeight/2 + "px solid #fff";
                 triangle_wrapper[i].style.borderLeft = rectangle_wrapper[i].offsetHeight + "px solid #213251";
             }
         }
